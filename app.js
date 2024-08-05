@@ -11,10 +11,7 @@ function increaseHomeScoreByThree() {
   drawHomeScore()
 }
 
-function drawHomeScore() {
-  const homeScoreElem = document.getElementById('homeScore')
-  homeScoreElem.innerText = home.toString()
-}
+
 function increaseAwayScoreByOne() {
   away++
   drawAwayScore()
@@ -25,11 +22,6 @@ function increaseAwayScoreByThree() {
   drawAwayScore()
 }
 
-function drawAwayScore() {
-  const awayScoreElem = document.getElementById('awayScore')
-  awayScoreElem.innerText = away.toString()
-}
-
 function increaseHomeScore(points) {
   home += points
   drawHomeScore()
@@ -38,4 +30,25 @@ function increaseHomeScore(points) {
 function increaseAwayScore(points) {
   away += points
   drawAwayScore()
+}
+
+function resetScores() {
+  home = 0
+  away = 0
+  drawScores()
+}
+
+function drawScores() {
+  drawHomeScore()
+  drawAwayScore()
+}
+
+function drawHomeScore() {
+  const homeScoreElem = document.getElementById('homeScore')
+  homeScoreElem.innerText = home.toString()
+}
+
+function drawAwayScore() {
+  const awayScoreElem = document.getElementById('awayScore')
+  awayScoreElem.innerText = away.toString()
 }
