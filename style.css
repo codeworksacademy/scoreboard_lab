@@ -33,7 +33,7 @@ main .container {
   background-color: #152bf476;
   color: white;
   text-shadow: 0px 3px 15px rgb(0, 62, 197);
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 .score {

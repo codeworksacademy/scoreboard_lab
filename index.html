@@ -27,13 +27,13 @@
             <div class="col-md-6">
               <div class="text-center">
                 <p class="display-2">HOME</p>
-                <p id="homeScore" class="display-1 score">00</p>
+                <p id="homeScore" class="display-1 score">0</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="text-center">
                 <p class="display-2">AWAY</p>
-                <p id="awayScore" class="display-1 score">00</p>
+                <p id="awayScore" class="display-1 score">0</p>
               </div>
             </div>
           </div>
@@ -44,10 +44,10 @@
           <div class="row">
             <div class="col-md-6">
               <div class="text-center mb-3">
-                <button class="btn btn-primary fs-1">HOME +1</button>
+                <button onclick="increaseHomeScoreByOne()" class="btn btn-primary fs-1">HOME +1</button>
               </div>
               <div class="text-center">
-                <button class="btn btn-primary fs-1">HOME +3</button>
+                <button onclick="increaseHomeScoreByThree()" class="btn btn-primary fs-1">HOME +3</button>
               </div>
             </div>
             <div class="col-md-6">
