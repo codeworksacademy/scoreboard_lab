@@ -26,6 +26,7 @@ function increaseHomeScore(points) {
   home += points
   if (home < 0) {
     home = 0
+    return
   }
   drawHomeScore()
 }
@@ -34,6 +35,7 @@ function increaseAwayScore(points) {
   away += points
   if (away < 0) {
     away = 0
+    return
   }
   drawAwayScore()
 }
